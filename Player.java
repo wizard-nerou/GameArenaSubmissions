@@ -1,4 +1,4 @@
-
+//hdsuivf
 public class Player {
     private Rectangle[] rectangles;
 
