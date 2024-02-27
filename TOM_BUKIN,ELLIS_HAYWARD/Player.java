@@ -18,9 +18,9 @@ public class Player {
     }
 
     public Player(GameArena arena) {
-        rectangles = new Rectangle[10];
-        rectangles[0] = new Rectangle(100, 150, 50, 30, "RED");
-        rectangles[1] = new Rectangle(100, 150, 40, 20, "ORANGE");
+        rectangles = new Rectangle[2];
+        rectangles[0] = new Rectangle(200, 480, 30, 50, "RED");
+        rectangles[1] = new Rectangle(205, 485, 20, 40, "ORANGE");
 
         render(arena);
 
