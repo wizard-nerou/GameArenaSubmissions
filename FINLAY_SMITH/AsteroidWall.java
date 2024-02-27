@@ -1,4 +1,4 @@
-package FINLAY_SMITH.GameAssets;
+package FINLAY_SMITH;
 
 
 import java.util.Random;

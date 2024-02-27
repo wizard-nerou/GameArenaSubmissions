@@ -1,4 +1,4 @@
-package FINLAY_SMITH.GameAssets;
+package FINLAY_SMITH;
 
 public class Background extends Body {
     private double averageStarSize = 2.5;

@@ -1,6 +1,5 @@
 package FINLAY_SMITH;
 
-import FINLAY_SMITH.GameAssets.SpaceArena;
 
 public class Main {
 
