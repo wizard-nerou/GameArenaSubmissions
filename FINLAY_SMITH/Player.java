@@ -1,8 +1,10 @@
+import GameArenaClasses.Ball;
+import GameArenaClasses.GameArena;
 
 /**
  * Models a Player which is a
- * Ball of specific size and colour.
- * When combined with the GameArena class,
+ * GameArenaClasses.Ball of specific size and colour.
+ * When combined with the GameArenaClasses.GameArena class,
  * instances of the Player class can be displayed on the screen.
  */
 public class Player extends Body {
@@ -39,7 +41,7 @@ public class Player extends Body {
         Ball littleThrusterBottom = new Ball(position.x - 30, position.y - 12, 7, "YELLOW", 9);
 
         shape = new Ball[]{mainShip, mainWindow, smallWindowTop, smallWindowBottom, littleThrusterBottom, littleThrusterTop, bigThrusterBottom, bigThrusterTop};
-//        shape = new Ball[]{mainShip}; // for testing - shows hit-box only
+//        shape = new GameArenaClasses.Ball[]{mainShip}; // for testing - shows hit-box only
     }
 
 

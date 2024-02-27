@@ -1,3 +1,5 @@
+import GameArenaClasses.Ball;
+import GameArenaClasses.GameArena;
 
 public class Background extends Body {
     private double averageStarSize = 2.5;

@@ -1,3 +1,4 @@
+import GameArenaClasses.Text;
 
 public class ScoreCounter extends Text {
     private int scoreValue;

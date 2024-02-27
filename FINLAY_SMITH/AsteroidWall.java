@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class AsteroidWall {
     public static double SPEED = 4;
-    public static int OPENINGSIZE = 100;
+    public static int OPENINGSIZE = 110;
 
     private Asteroid[] asteroidsTop;
     private Asteroid[] asteroidsBottom;

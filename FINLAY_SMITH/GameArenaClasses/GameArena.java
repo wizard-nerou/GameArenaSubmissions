@@ -1,3 +1,4 @@
+package GameArenaClasses;
 
 import javax.swing.*;
 import java.awt.*;
@@ -48,7 +49,7 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	private Image backgroundImage = null;
 
 	/**
-	 * Create a view of a GameArena.
+	 * Create a view of a GameArenaClasses.GameArena.
 	 *
 	 * @param width The width of the playing area, in pixels.
 	 * @param height The height of the playing area, in pixels.
@@ -59,11 +60,11 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Create a view of a GameArena.
+	 * Create a view of a GameArenaClasses.GameArena.
 	 *
 	 * @param width The width of the playing area, in pixels.
 	 * @param height The height of the playing area, in pixels.
-	 * @param createWindow Defines if a window should be created to host this GameArena. @see getPanel.
+	 * @param createWindow Defines if a window should be created to host this GameArenaClasses.GameArena. @see getPanel.
 	 */
 	public GameArena(int width, int height, boolean createWindow)
 	{
@@ -147,7 +148,7 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Update the size of the GameArena.
+	 * Update the size of the GameArenaClasses.GameArena.
 	 *
 	 * @param width the new width of the window in pixels.
 	 * @param height the new height of the window in pixels.
@@ -166,8 +167,8 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Set the background of the GameArena window to the specified image file.
-	 * The image will be scaled to fit the size of the GameArena
+	 * Set the background of the GameArenaClasses.GameArena window to the specified image file.
+	 * The image will be scaled to fit the size of the GameArenaClasses.GameArena
 	 *
 	 * @param filename the filename of an image to use.
 	 */
@@ -181,16 +182,16 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	 * Retrieves the JPanel on which this gameArena is drawn, so that it can be integrated into
 	 * a users application.
 	 *
-	 * n.b. This should only be called if this GameArena was constructed without its own JFrame
+	 * n.b. This should only be called if this GameArenaClasses.GameArena was constructed without its own JFrame
 	 *
-	 * @return the JPanel containing this GameArena.
+	 * @return the JPanel containing this GameArenaClasses.GameArena.
 	 */
 	public JPanel getPanel()
 	{
 		return this;
 	}
 	/**
-	 * Close this GameArena window.
+	 * Close this GameArenaClasses.GameArena window.
 	 *
 	 */
 	public void exit()
@@ -387,10 +388,10 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Adds a given Ball to the GameArena.
-	 * Once a Ball is added, it will automatically appear on the window.
+	 * Adds a given GameArenaClasses.Ball to the GameArenaClasses.GameArena.
+	 * Once a GameArenaClasses.Ball is added, it will automatically appear on the window.
 	 *
-	 * @param b the ball to add to the GameArena.
+	 * @param b the ball to add to the GameArenaClasses.GameArena.
 	 */
 	public void addBall(Ball b)
 	{
@@ -398,10 +399,10 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Adds a given Rectangle to the GameArena.
+	 * Adds a given GameArenaClasses.Rectangle to the GameArenaClasses.GameArena.
 	 * Once a rectangle is added, it will automatically appear on the window.
 	 *
-	 * @param r the rectangle to add to the GameArena.
+	 * @param r the rectangle to add to the GameArenaClasses.GameArena.
 	 */
 	public void addRectangle(Rectangle r)
 	{
@@ -409,10 +410,10 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Adds a given Line to the GameArena.
-	 * Once a Line is added, it will automatically appear on the window.
+	 * Adds a given GameArenaClasses.Line to the GameArenaClasses.GameArena.
+	 * Once a GameArenaClasses.Line is added, it will automatically appear on the window.
 	 *
-	 * @param l the line to add to the GameArena.
+	 * @param l the line to add to the GameArenaClasses.GameArena.
 	 */
 	public void addLine(Line l)
 	{
@@ -420,10 +421,10 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Adds a given Text object to the GameArena.
-	 * Once a Text object is added, it will automatically appear on the window.
+	 * Adds a given GameArenaClasses.Text object to the GameArenaClasses.GameArena.
+	 * Once a GameArenaClasses.Text object is added, it will automatically appear on the window.
 	 *
-	 * @param t the text object to add to the GameArena.
+	 * @param t the text object to add to the GameArenaClasses.GameArena.
 	 */
 	public void addText(Text t)
 	{
@@ -432,10 +433,10 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 
 
 	/**
-	 * Remove a Rectangle from the GameArena.
-	 * Once a Rectangle is removed, it will no longer appear on the window.
+	 * Remove a GameArenaClasses.Rectangle from the GameArenaClasses.GameArena.
+	 * Once a GameArenaClasses.Rectangle is removed, it will no longer appear on the window.
 	 *
-	 * @param r the rectangle to remove from the GameArena.
+	 * @param r the rectangle to remove from the GameArenaClasses.GameArena.
 	 */
 	public void removeRectangle(Rectangle r)
 	{
@@ -443,10 +444,10 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Remove a Ball from the GameArena.
-	 * Once a Ball is removed, it will no longer appear on the window.
+	 * Remove a GameArenaClasses.Ball from the GameArenaClasses.GameArena.
+	 * Once a GameArenaClasses.Ball is removed, it will no longer appear on the window.
 	 *
-	 * @param b the ball to remove from the GameArena.
+	 * @param b the ball to remove from the GameArenaClasses.GameArena.
 	 */
 	public void removeBall(Ball b)
 	{
@@ -454,10 +455,10 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Remove a Line from the GameArena.
-	 * Once a Line is removed, it will no longer appear on the window.
+	 * Remove a GameArenaClasses.Line from the GameArenaClasses.GameArena.
+	 * Once a GameArenaClasses.Line is removed, it will no longer appear on the window.
 	 *
-	 * @param l the line to remove from the GameArena.
+	 * @param l the line to remove from the GameArenaClasses.GameArena.
 	 */
 	public void removeLine(Line l)
 	{
@@ -465,10 +466,10 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Remove a Text object from the GameArena.
-	 * Once a Text object is removed, it will no longer appear on the window.
+	 * Remove a GameArenaClasses.Text object from the GameArenaClasses.GameArena.
+	 * Once a GameArenaClasses.Text object is removed, it will no longer appear on the window.
 	 *
-	 * @param t the text object to remove from the GameArena.
+	 * @param t the text object to remove from the GameArenaClasses.GameArena.
 	 */
 	public void removeText(Text t)
 	{
@@ -476,8 +477,8 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Removes every object that has ever been added to the GameArena. Nothing
-	 * should appear on the GameArena window after this has executed.
+	 * Removes every object that has ever been added to the GameArenaClasses.GameArena. Nothing
+	 * should appear on the GameArenaClasses.GameArena window after this has executed.
 	 */
 	public void clearGameArena() {
 		synchronized(this) {
@@ -605,7 +606,7 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Gets the width of the GameArena window, in pixels.
+	 * Gets the width of the GameArenaClasses.GameArena window, in pixels.
 	 * @return the width in pixels
 	 */
 	public int getArenaWidth()
@@ -614,7 +615,7 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	}
 
 	/**
-	 * Gets the height of the GameArena window, in pixels.
+	 * Gets the height of the GameArenaClasses.GameArena window, in pixels.
 	 * @return the height in pixels
 	 */
 	public int getArenaHeight()
@@ -714,7 +715,7 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 
 	/**
 	 * Gathers location informaiton on the mouse pointer.
-	 * @return the current X coordinate of the mouse pointer in the GameArena.
+	 * @return the current X coordinate of the mouse pointer in the GameArenaClasses.GameArena.
 	 */
 	public int getMousePositionX()
 	{
@@ -723,7 +724,7 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 
 	/**
 	 * Gathers location informaiton on the mouse pointer.
-	 * @return the current Y coordinate of the mouse pointer in the GameArena.
+	 * @return the current Y coordinate of the mouse pointer in the GameArenaClasses.GameArena.
 	 */
 	public int getMousePositionY()
 	{

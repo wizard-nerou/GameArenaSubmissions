@@ -1,3 +1,5 @@
+import GameArenaClasses.Ball;
+
 public class Asteroid extends Body {
 
     public static final int DIAMETER = 60;
@@ -22,7 +24,7 @@ public class Asteroid extends Body {
         Ball largeCrater = new Ball((position.x - 6), (position.y - 6), 20, "#020202", 1);
 
         this.shape = new Ball[]{asteroid, smallCrater, medCrater, largeCrater};
-//        this.shape = new Ball[]{asteroid}; // for testing - shows hit-box only
+//        this.shape = new GameArenaClasses.Ball[]{asteroid}; // for testing - shows hit-box only
     }
 
     public void rotate(double angle) {

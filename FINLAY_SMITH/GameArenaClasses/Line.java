@@ -1,8 +1,9 @@
+package GameArenaClasses;
 
 /**
  * Models a simple line. 
- * This class represents a Line object. When combined with the GameArena class,
- * instances of the Line class can be displayed on the screen.
+ * This class represents a GameArenaClasses.Line object. When combined with the GameArenaClasses.GameArena class,
+ * instances of the GameArenaClasses.Line class can be displayed on the screen.
  */
 public class Line 
 {
@@ -29,7 +30,7 @@ public class Line
 
 	/**
 	 * Obtains the start position of this line on the X axis.
-	 * @return the X coordinate of the start of this line within the GameArena.
+	 * @return the X coordinate of the start of this line within the GameArenaClasses.GameArena.
 	 */
 	public double getXStart()
 	{
@@ -38,7 +39,7 @@ public class Line
 
 	/**
 	 * Obtains the end position of this line on the X axis.
-	 * @return the X coordinate of the end of this line within the GameArena.
+	 * @return the X coordinate of the end of this line within the GameArenaClasses.GameArena.
 	 */
 	public double getXEnd()
 	{
@@ -48,7 +49,7 @@ public class Line
 
 	/**
 	 * Obtains the start position of this line on the Y axis.
-	 * @return the Y coordinate of the start of this line within the GameArena.
+	 * @return the Y coordinate of the start of this line within the GameArenaClasses.GameArena.
 	 */
 	public double getYStart()
 	{
@@ -57,7 +58,7 @@ public class Line
 
 	/**
 	 * Obtains the end position of this line on the Y axis.
-	 * @return the Y coordinate of the end of this line within the GameArena.
+	 * @return the Y coordinate of the end of this line within the GameArenaClasses.GameArena.
 	 */
 	public double getYEnd()
 	{
@@ -133,8 +134,8 @@ public class Line
 	}
 
 	/**
-	 * Obtains the colour of this Line.
-	 * @return a textual description of the colour of this Line.
+	 * Obtains the colour of this GameArenaClasses.Line.
+	 * @return a textual description of the colour of this GameArenaClasses.Line.
 	 */
 	public String getColour()
 	{
@@ -142,8 +143,8 @@ public class Line
 	}
 
 	/**
-	 * Obtains the layer of this Line.
-	 * @return the layer of this Line.
+	 * Obtains the layer of this GameArenaClasses.Line.
+	 * @return the layer of this GameArenaClasses.Line.
 	 */
 	public int getLayer()
 	{
@@ -169,14 +170,14 @@ public class Line
 	}
 
 	/**
-	 * Constructor. Creates a Line with the given parameters.
-	 * @param x1 The x co-ordinate of the start of the Line (in pixels)
-	 * @param y1 The y co-ordinate of the start of the Line (in pixels)
-	 * @param x2 The x co-ordinate of the end of the Line (in pixels)
-	 * @param y2 The y co-ordinate of the end of the Line (in pixels)
-	 * @param thickness The width of the Line (in pixels)
-	 * @param col The colour of the Line (Permissable colours are: BLACK, BLUE, CYAN, DARKGREY, GREY, GREEN, LIGHTGREY, MAGENTA, ORANGE, PINK, RED, WHITE, YELLOW or ##RRGGBB)
-	 * @param lay The layer the Line is to be drawn on. Objects with a higher layer number are always drawn on top of those with lower layer numbers.
+	 * Constructor. Creates a GameArenaClasses.Line with the given parameters.
+	 * @param x1 The x co-ordinate of the start of the GameArenaClasses.Line (in pixels)
+	 * @param y1 The y co-ordinate of the start of the GameArenaClasses.Line (in pixels)
+	 * @param x2 The x co-ordinate of the end of the GameArenaClasses.Line (in pixels)
+	 * @param y2 The y co-ordinate of the end of the GameArenaClasses.Line (in pixels)
+	 * @param thickness The width of the GameArenaClasses.Line (in pixels)
+	 * @param col The colour of the GameArenaClasses.Line (Permissable colours are: BLACK, BLUE, CYAN, DARKGREY, GREY, GREEN, LIGHTGREY, MAGENTA, ORANGE, PINK, RED, WHITE, YELLOW or ##RRGGBB)
+	 * @param lay The layer the GameArenaClasses.Line is to be drawn on. Objects with a higher layer number are always drawn on top of those with lower layer numbers.
 	 */
 	public Line(double x1, double y1, double x2, double y2, double thickness, String col, int lay)
 	{
@@ -188,13 +189,13 @@ public class Line
 	}	
 
 	/**
-	 * Constructor. Creates a Line with the given parameters.
-	 * @param x1 The x co-ordinate of the start of the Line (in pixels)
-	 * @param y1 The y co-ordinate of the start of the Line (in pixels)
-	 * @param x2 The x co-ordinate of the end of the Line (in pixels)
-	 * @param y2 The y co-ordinate of the end of the Line (in pixels)
-	 * @param thickness The width of the Line (in pixels)
-	 * @param col The colour of the Line (Permissable colours are: BLACK, BLUE, CYAN, DARKGREY, GREY, GREEN, LIGHTGREY, MAGENTA, ORANGE, PINK, RED, WHITE, YELLOW or ##RRGGBB)
+	 * Constructor. Creates a GameArenaClasses.Line with the given parameters.
+	 * @param x1 The x co-ordinate of the start of the GameArenaClasses.Line (in pixels)
+	 * @param y1 The y co-ordinate of the start of the GameArenaClasses.Line (in pixels)
+	 * @param x2 The x co-ordinate of the end of the GameArenaClasses.Line (in pixels)
+	 * @param y2 The y co-ordinate of the end of the GameArenaClasses.Line (in pixels)
+	 * @param thickness The width of the GameArenaClasses.Line (in pixels)
+	 * @param col The colour of the GameArenaClasses.Line (Permissable colours are: BLACK, BLUE, CYAN, DARKGREY, GREY, GREEN, LIGHTGREY, MAGENTA, ORANGE, PINK, RED, WHITE, YELLOW or ##RRGGBB)
 	 */
 	public Line(double x1, double y1, double x2, double y2, double thickness, String col)
 	{

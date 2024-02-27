@@ -1,3 +1,5 @@
+import GameArenaClasses.Ball;
+import GameArenaClasses.GameArena;
 
 public class Body {
     protected Vector position;
