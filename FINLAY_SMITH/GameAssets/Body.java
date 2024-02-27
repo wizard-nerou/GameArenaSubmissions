@@ -1,4 +1,4 @@
-package GameAssets;
+package FINLAY_SMITH.GameAssets;
 
 public class Body {
     protected Vector position;

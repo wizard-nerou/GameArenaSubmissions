@@ -1,4 +1,4 @@
-package GameAssets;
+package FINLAY_SMITH.GameAssets;
 
 /**
  * Models a Player which is a
