@@ -1,8 +1,5 @@
-package FINLAY_SMITH;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class SpaceArena extends GameArena {
@@ -16,14 +13,13 @@ public class SpaceArena extends GameArena {
     private int wallCreationCounter = 0;
     private boolean inPlay = false;
     private boolean spaceHeld = false;
-    private final int MAX_WALLS = 3;
+    private int maxWalls;
 
     private final Queue<AsteroidWall> asteroidWalls;
 
 
     public SpaceArena(int width, int height) {
         super(width, height);
-
 
         player = new Player(300, height / 2);
 
@@ -37,13 +33,15 @@ public class SpaceArena extends GameArena {
         closeStars = new Background(randomGenerator.nextInt(50)+250);
         farStarts = new Background(randomGenerator.nextInt(50)+150);
         farStarts.setAverageStarSize(1.5);
+
+        maxWalls = width / 200;
     }
 
     public void addAsteroidWall() {
         // if there are less than MAX_WALLS walls, the arena is not full yet, so create more,
         // else, recycle a wall that is no longer visible, off the side of the screen, to same memory
 
-        if (asteroidWalls.size() < MAX_WALLS) {
+        if (asteroidWalls.size() < maxWalls) {
             AsteroidWall asteroidWall = new AsteroidWall(this);
             asteroidWalls.add(asteroidWall);
         } else {

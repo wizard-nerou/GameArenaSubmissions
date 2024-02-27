@@ -1,4 +1,3 @@
-package FINLAY_SMITH;
 
 public class ScoreCounter extends Text {
     private int scoreValue;

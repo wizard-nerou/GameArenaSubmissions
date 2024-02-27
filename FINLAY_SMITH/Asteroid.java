@@ -1,5 +1,3 @@
-package FINLAY_SMITH;
-
 public class Asteroid extends Body {
 
     public static final int DIAMETER = 60;

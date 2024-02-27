@@ -1,4 +1,3 @@
-package FINLAY_SMITH;
 
 public class Body {
     protected Vector position;

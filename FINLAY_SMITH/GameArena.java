@@ -1,4 +1,3 @@
-package FINLAY_SMITH;
 
 import javax.swing.*;
 import java.awt.*;

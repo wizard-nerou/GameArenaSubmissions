@@ -1,4 +1,3 @@
-package FINLAY_SMITH;
 
 /**
  * Models a simple, solid rectangle. 

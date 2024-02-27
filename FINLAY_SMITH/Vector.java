@@ -1,4 +1,3 @@
-package FINLAY_SMITH;
 
 public class Vector {
     public double x;

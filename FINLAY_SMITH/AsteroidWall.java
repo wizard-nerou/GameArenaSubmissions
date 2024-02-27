@@ -1,6 +1,3 @@
-package FINLAY_SMITH;
-
-
 import java.util.Random;
 
 public class AsteroidWall {
