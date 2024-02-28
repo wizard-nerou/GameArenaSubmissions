@@ -26,9 +26,9 @@ public class Player {
             rectangles[1].setYPosition(5);
             }
 
-            if(rectangles[0].getXPosition() >= 400){
-            rectangles[0].setXPosition(400);
-            rectangles[1].setXPosition(405);
+            if(rectangles[0].getXPosition() >= 420){
+            rectangles[0].setXPosition(420);
+            rectangles[1].setXPosition(425);
             }
 
             if(rectangles[0].getXPosition() <= 0){
