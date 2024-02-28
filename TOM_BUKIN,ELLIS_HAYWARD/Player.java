@@ -11,9 +11,10 @@ public class Player {
     }
 
     public void move(double dx, double dy) {
+        
         for (int i = 0; i < rectangles.length; i++) {
             rectangles[i].setXPosition(rectangles[i].getXPosition() + dx);
-            rectangles[i].setYPosition(rectangles[i].getXPosition() + dy);
+            rectangles[i].setYPosition(rectangles[i].getYPosition() + dy);
         }
     }
 

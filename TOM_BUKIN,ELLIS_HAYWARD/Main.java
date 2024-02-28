@@ -9,6 +9,20 @@ public class Main{
 
         while(true)
         {
+            if (arena.rightPressed()){
+                newPlayer.move(5, 0);
+            }
+            if (arena.leftPressed()){
+                newPlayer.move(-5, 0);
+            }
+            if (arena.upPressed()){
+                newPlayer.move(0, -5);
+            }
+            if (arena.downPressed()){
+                newPlayer.move(0, 5);
+            }
+            newRoadblock.move(0, 5);
+            
             arena.pause();
         }
     }

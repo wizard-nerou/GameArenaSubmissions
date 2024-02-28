@@ -10,13 +10,21 @@ public class roadBlock {
         }
     }
 
+    public void move(double dx, double dy) {
+
+        for (int i = 0; i < roadBlockrectangles.length; i++) {
+            roadBlockrectangles[i].setXPosition(roadBlockrectangles[i].getXPosition() + dx);
+            roadBlockrectangles[i].setYPosition(roadBlockrectangles[i].getYPosition() + dy);
+        }
+    }
+
     public roadBlock(GameArena arena) {
         roadBlockrectangles = new Rectangle[5];
-        roadBlockrectangles[0] = new Rectangle(200, 400, 70, 20, "RED");
-        roadBlockrectangles[1] = new Rectangle(200, 400, 10, 20, "WHITE");
-        roadBlockrectangles[2] = new Rectangle(220, 400, 10, 20, "WHITE");
-        roadBlockrectangles[3] = new Rectangle(240, 400, 10, 20, "WHITE");
-        roadBlockrectangles[4] = new Rectangle(260, 400, 10, 20, "WHITE");
+        roadBlockrectangles[0] = new Rectangle(200, 0, 70, 20, "RED");
+        roadBlockrectangles[1] = new Rectangle(200, 0, 10, 20, "WHITE");
+        roadBlockrectangles[2] = new Rectangle(220, 0, 10, 20, "WHITE");
+        roadBlockrectangles[3] = new Rectangle(240, 0, 10, 20, "WHITE");
+        roadBlockrectangles[4] = new Rectangle(260, 0, 10, 20, "WHITE");
 
         render(arena);
     }
