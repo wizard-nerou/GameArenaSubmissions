@@ -12,11 +12,11 @@ public class roadBlock {
 
     public roadBlock(GameArena arena) {
         roadBlockrectangles = new Rectangle[5];
-        roadBlockrectangles[0] = new Rectangle(200, 400, 70, 20, "RED");
-        roadBlockrectangles[1] = new Rectangle(200, 400, 10, 20, "WHITE");
-        roadBlockrectangles[2] = new Rectangle(220, 400, 10, 20, "WHITE");
-        roadBlockrectangles[3] = new Rectangle(240, 400, 10, 20, "WHITE");
-        roadBlockrectangles[4] = new Rectangle(260, 400, 10, 20, "WHITE");
+        roadBlockrectangles[0] = new Rectangle(190, 400, 70, 20, "RED");
+        roadBlockrectangles[1] = new Rectangle(190, 400, 10, 20, "WHITE");
+        roadBlockrectangles[2] = new Rectangle(210, 400, 10, 20, "WHITE");
+        roadBlockrectangles[3] = new Rectangle(230, 400, 10, 20, "WHITE");
+        roadBlockrectangles[4] = new Rectangle(250, 400, 10, 20, "WHITE");
 
         render(arena);
     }

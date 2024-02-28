@@ -4,6 +4,7 @@ public class Main{
         GameArena arena = new GameArena(450, 550);
         //Ball b = new Ball(250, 150, 20, "GREEN");
         //arena.addBall(b);
+        Background newBackground = new Background(arena);
         Player newPlayer = new Player(arena);
         roadBlock newRoadblock = new roadBlock(arena);
 
