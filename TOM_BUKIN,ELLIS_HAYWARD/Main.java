@@ -9,7 +9,7 @@ public class Main{
 
         while(true)
         {
-            if (arena.rightPressed()){
+            if (arena.rightPressed()) {
                 newPlayer.move(5, 0);
             }
             if (arena.leftPressed()){
@@ -23,6 +23,7 @@ public class Main{
             }
             newRoadblock.move(0, 5);
             
+
             arena.pause();
         }
     }

@@ -1,6 +1,7 @@
 //hdsuivf
 public class Player {
     private Rectangle[] rectangles;
+    boolean border = false;
 
     public void render(GameArena arena) {
 
@@ -11,11 +12,29 @@ public class Player {
     }
 
     public void move(double dx, double dy) {
-        
         for (int i = 0; i < rectangles.length; i++) {
             rectangles[i].setXPosition(rectangles[i].getXPosition() + dx);
             rectangles[i].setYPosition(rectangles[i].getYPosition() + dy);
         }
+            if(rectangles[0].getYPosition() >= 500){
+            rectangles[0].setYPosition(500);
+            rectangles[1].setYPosition(505);
+            }
+
+            if(rectangles[0].getYPosition() <= 0){
+            rectangles[0].setYPosition(0);
+            rectangles[1].setYPosition(5);
+            }
+
+            if(rectangles[0].getXPosition() >= 400){
+            rectangles[0].setXPosition(400);
+            rectangles[1].setXPosition(405);
+            }
+
+            if(rectangles[0].getXPosition() <= 0){
+            rectangles[0].setXPosition(0);
+            rectangles[1].setXPosition(5);
+            }
     }
 
     public Player(GameArena arena) {
