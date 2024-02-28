@@ -37,7 +37,7 @@ public class Dragon {
         this.health = 10;
 
         shootTimer = System.currentTimeMillis();
-        shootRechargeDuration = 2000;
+        shootRechargeDuration = 500;
     }
 
     /**
