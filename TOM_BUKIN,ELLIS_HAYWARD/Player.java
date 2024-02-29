@@ -39,18 +39,16 @@ public class Player {
             rectangles[1].setXPosition(5);
             }
 
-        XcarHitbox = rectangles[0].getXPosition();
-        YcarHitbox = rectangles[0].getYPosition();
 
     }
 
-    public double xHitbox(){
-        return XcarHitbox;
+    public Rectangle getHitbox(){
+        return rectangles[0];
     }
 
-    public double yHitbox(){
-        return yHitbox();
-    }
+    //public double yHitbox(){
+    //    return rectangles[0].getYPosition();
+    //}
 
     public Player(GameArena arena) {
         rectangles = new Rectangle[2];

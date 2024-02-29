@@ -33,6 +33,15 @@ public class roadBlock {
             }
         }
     }
+    public Rectangle roadblockGetHitbox(){
+        return roadBlockrectangles[0];
+    }
+
+
+    //public double roadblockYHitbox(){
+    //   return roadBlockrectangles[0].getYPosition();
+    //}
+
 
     public roadBlock(GameArena arena) {
         Random random = new Random();
