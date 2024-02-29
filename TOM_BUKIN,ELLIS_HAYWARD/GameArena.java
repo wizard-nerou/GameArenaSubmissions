@@ -52,6 +52,9 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	 * @param width The width of the playing area, in pixels.
 	 * @param height The height of the playing area, in pixels.
 	 */
+
+	 
+
 	public GameArena(int width, int height)
 	{
 		this.init(width, height, true);

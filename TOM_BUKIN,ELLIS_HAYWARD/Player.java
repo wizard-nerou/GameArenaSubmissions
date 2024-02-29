@@ -1,5 +1,7 @@
 //hdsuivf
 public class Player {
+    double XcarHitbox;
+    double YcarHitbox;
     private Rectangle[] rectangles;
     boolean border = false;
 
@@ -12,6 +14,7 @@ public class Player {
     }
 
     public void move(double dx, double dy) {
+        
         for (int i = 0; i < rectangles.length; i++) {
             rectangles[i].setXPosition(rectangles[i].getXPosition() + dx);
             rectangles[i].setYPosition(rectangles[i].getYPosition() + dy);
@@ -35,6 +38,18 @@ public class Player {
             rectangles[0].setXPosition(0);
             rectangles[1].setXPosition(5);
             }
+
+        XcarHitbox = rectangles[0].getXPosition();
+        YcarHitbox = rectangles[0].getYPosition();
+
+    }
+
+    public double xHitbox(){
+        return XcarHitbox;
+    }
+
+    public double yHitbox(){
+        return yHitbox();
     }
 
     public Player(GameArena arena) {
