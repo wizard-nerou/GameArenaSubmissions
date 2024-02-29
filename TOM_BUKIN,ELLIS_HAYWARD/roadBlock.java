@@ -39,11 +39,11 @@ public class roadBlock {
         int num = random.nextInt(max-min+1)+min;
 
         roadBlockrectangles = new Rectangle[5];
-        roadBlockrectangles[0] = new Rectangle(num, 0, 70, 20, "RED");
-        roadBlockrectangles[1] = new Rectangle(num, 0, 10, 20, "WHITE");
-        roadBlockrectangles[2] = new Rectangle(num + 20, 0, 10, 20, "WHITE");
-        roadBlockrectangles[3] = new Rectangle(num + 40, 0, 10, 20, "WHITE");
-        roadBlockrectangles[4] = new Rectangle(num + 60, 0, 10, 20, "WHITE");
+        roadBlockrectangles[0] = new Rectangle(190, 0, 70, 20, "RED");
+        roadBlockrectangles[1] = new Rectangle(190, 0, 10, 20, "WHITE");
+        roadBlockrectangles[2] = new Rectangle(210, 0, 10, 20, "WHITE");
+        roadBlockrectangles[3] = new Rectangle(230, 0, 10, 20, "WHITE");
+        roadBlockrectangles[4] = new Rectangle(250, 0, 10, 20, "WHITE");
 
         render(arena);
     }
