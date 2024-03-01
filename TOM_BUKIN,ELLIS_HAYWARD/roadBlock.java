@@ -22,7 +22,7 @@ public class roadBlock {
         for (int i = 0; i < roadBlockrectangles.length; i++) {
             roadBlockrectangles[i].setXPosition(roadBlockrectangles[i].getXPosition() + dx);
             roadBlockrectangles[i].setYPosition(roadBlockrectangles[i].getYPosition() + dy);
-            if (roadBlockrectangles[i].getYPosition() == 600){
+            if (roadBlockrectangles[i].getYPosition() >= 600){
                 roadBlockrectangles[i].setYPosition(0);
                 roadBlockrectangles[0].setXPosition(num);
                 roadBlockrectangles[1].setXPosition(num);
