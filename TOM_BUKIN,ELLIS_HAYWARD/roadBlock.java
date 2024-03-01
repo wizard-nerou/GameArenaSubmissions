@@ -15,8 +15,8 @@ public class roadBlock {
 
         int score = 0;
         Random random = new Random();
-        int  min = 0;
-        int max = 420;
+        int  min = 75;
+        int max = 345;
         int num = random.nextInt(max-min+1)+min;
 
         for (int i = 0; i < roadBlockrectangles.length; i++) {

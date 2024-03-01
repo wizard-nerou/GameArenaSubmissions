@@ -29,14 +29,14 @@ public class Player {
             rectangles[1].setYPosition(5);
             }
 
-            if(rectangles[0].getXPosition() >= 420){
-            rectangles[0].setXPosition(420);
-            rectangles[1].setXPosition(425);
+            if(rectangles[0].getXPosition() >= 345){
+            rectangles[0].setXPosition(345);
+            rectangles[1].setXPosition(350);
             }
 
-            if(rectangles[0].getXPosition() <= 0){
-            rectangles[0].setXPosition(0);
-            rectangles[1].setXPosition(5);
+            if(rectangles[0].getXPosition() <= 75){
+            rectangles[0].setXPosition(75);
+            rectangles[1].setXPosition(80);
             }
 
 
