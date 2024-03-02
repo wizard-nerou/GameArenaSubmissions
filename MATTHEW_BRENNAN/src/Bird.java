@@ -82,12 +82,6 @@ public class Bird {
         top_collision.setYPosition(y - 5);
     }
 
-    // PROBELMS
-    // CANT MOVE AFTER HITTING EDGE OF BLOCK.
-    // GETS STUCK TO SIDE OF BOCKS (presumably gravity stops getting calculated when
-    // on side of block).
-    // slides thorugh blocks. issue with ignoring some check based on
-    // isCollidingBelow.
     public void physics_process(Platform[] platforms) {
         if (m_y > 0) {
             for (int i = 0; i < m_y; i++) {
