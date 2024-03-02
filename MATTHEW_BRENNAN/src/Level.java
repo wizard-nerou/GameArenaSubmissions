@@ -2,6 +2,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList; // Import the ArrayList class
 
+//level class
 public class Level {
     private ArrayList<Platform> platformsList = new ArrayList<>();
     private ArrayList<Spikes> spikesList = new ArrayList<>();

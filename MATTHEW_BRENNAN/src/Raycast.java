@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Raycast {
-    private Rectangle r = new Rectangle(0, 0, 10, 10, "ALPHARED", 100);
+    private Rectangle r = new Rectangle(0, 0, 10, 10, "ALPHA", 100);
 
     public int cast(int b_x, int b_y, Gun gun, GameArena arena, Platform[] platformsList) {
         double angle = gun.getAngle(b_x, b_y, arena);

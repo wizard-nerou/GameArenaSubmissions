@@ -14,8 +14,6 @@ public class Game {
     public static void reset() {
         // arena.setBackgroundImage("bg.png");
 
-        mouseLocked = true;
-
         level.next(arena, f_door, door);
         level.addPlatforms(arena);
         level.addSpikes(arena);

@@ -10,7 +10,7 @@ public class ParticleEmit {
     public void init(int b_x, int b_y, int dist, double angle, GameArena gameArena) {
         for (int i = 0; i < 5; i++) {
             double n_angle = (angle - 0.25) + (i * 0.125);
-            pList.add(new Particle(b_x, b_y, (int) (dist * Math.cos(n_angle)), (int) (dist * Math.sin(n_angle)), 20));
+            pList.add(new Particle(b_x, b_y, (int) (dist * Math.cos(n_angle)), (int) (dist * Math.sin(n_angle)), 40));
         }
     }
 
