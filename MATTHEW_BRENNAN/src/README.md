@@ -1,5 +1,5 @@
 ﻿# FLIGHTLESS BIRD!
-# Agent Beak has been tasked by Colonel Flippers infiltrates the lair of the villainous W.O.L.F (Wicked Organization for Larceny and Fear)!
+Agent Beak has been tasked by Colonel Flippers infiltrates the lair of the villainous W.O.L.F (Wicked Organization for Larceny and Fear)!
 
 # Only problem is......
 # Beak can only move using his trusty shotgun to launch himself around!
