@@ -17,6 +17,7 @@ public class Text
 	private int layer;					// The layer this text is drawn on
 	private String text;				// The actual text to display
 	private String colour;				// The colour of this text
+	private float score;
 
 										// Permissable colours are:
 										// BLACK, BLUE, CYAN, DARKGREY, GREY,
@@ -97,7 +98,7 @@ public class Text
 	 * @param col The colour of the line (Permissable colours are: BLACK, BLUE, CYAN, DARKGREY, GREY, GREEN, LIGHTGREY, MAGENTA, ORANGE, PINK, RED, WHITE, YELLOW or ##RRGGBB)
 	 * @param layer The layer this line is to be drawn on. Objects with a higher layer number are always drawn on top of those with lower layer numbers. 
 	 */
-	public Text(String text, int size, double x, double y, String col, int layer)
+	public Text(String text, float score, int size, double x, double y, String col, int layer)
 	{
 		this.xPosition = x;
 		this.yPosition = y;
@@ -105,6 +106,7 @@ public class Text
 		this.text = text;
 		this.colour = col;
 		this.layer = layer;
+		this.score = score;
 	}	
 
 	/**

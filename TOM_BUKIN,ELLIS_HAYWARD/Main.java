@@ -8,7 +8,9 @@ public class Main {
         roadBlock newRoadBlock3 = new roadBlock(arena);
         roadBlock newRoadBlock4 = new roadBlock(arena);
         Text gameOverText = new Text("You Crashed!", 25, 140, 420, "RED");
+        Text scoreText = new Text("Score: %.0f", roadBlock.getScore(), 18, 0, 20, "RED", 0); //no idea why I have to put layer as 0 but it doesnt work without it
 
+        arena.addText(scoreText);
 
         while (true) {
             if(newPlayer.getHitbox().collides(newRoadBlock.roadblockGetHitbox()) || newPlayer.getHitbox().collides(newRoadBlock2.roadblockGetHitbox()) || newPlayer.getHitbox().collides(newRoadBlock3.roadblockGetHitbox()) || newPlayer.getHitbox().collides(newRoadBlock4.roadblockGetHitbox()))  {
@@ -32,8 +34,13 @@ public class Main {
             newRoadBlock.move(0, 10);
             newRoadBlock2.move(0, 9);
             newRoadBlock3.move(0, 8);
-            newRoadBlock4.move(0, 7);            
+            newRoadBlock4.move(0, 7);        
+            
+            scoreText.setText(String.format("Score: %.0f", roadBlock.getScore()));
+
+
             arena.pause();
+
 
         }
     }

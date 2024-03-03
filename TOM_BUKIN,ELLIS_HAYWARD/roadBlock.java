@@ -1,6 +1,7 @@
 import java.util.Random;
 
 public class roadBlock {
+    public static float score = 0;
     public Rectangle[] roadBlockrectangles;
 
     public void render(GameArena arena) {
@@ -13,7 +14,6 @@ public class roadBlock {
 
     public void move(double dx, double dy) {
 
-        int score = 0;
         Random random = new Random();
         int  min = 75;
         int max = 345;
@@ -29,10 +29,14 @@ public class roadBlock {
                 roadBlockrectangles[2].setXPosition(num + 20);
                 roadBlockrectangles[3].setXPosition(num + 40);
                 roadBlockrectangles[4].setXPosition(num + 60);
-                score = score + 1;
+                score = score + 0.2f;
             }
         }
     }
+    public static float getScore(){
+        return score;
+    }
+
     public Rectangle roadblockGetHitbox(){
         return roadBlockrectangles[0];
     }
