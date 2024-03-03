@@ -63,9 +63,6 @@ public class Game {
             if (arena.leftMousePressed()) {
                 if (mouseLocked == false) {
                     mouseLocked = true;
-                    if (player.getGun().numShells() == 0) {
-                        reset();
-                    }
                     if (player.getGun().loaded()) {
                         int dist = player.getRaycast().cast((int) player.getCollision().getXPosition(),
                                 (int) player.getCollision().getYPosition(), player.getGun(), arena,
@@ -81,6 +78,12 @@ public class Game {
 
                         player.getGun().emitParticles((int) player.getGun().getBarrel().getXPosition(),
                                 (int) player.getGun().getBarrel().getYPosition(), arena);
+                    }
+                    if (player.getGun().numShells() == 0) {
+                        for (int i = 0; i < 8; i++) {
+                            arena.pause();
+                        }
+                        reset();
                     }
                 }
             } else {
