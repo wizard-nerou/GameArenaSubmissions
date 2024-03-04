@@ -31,10 +31,10 @@ public class Main {
             if (arena.downPressed()) {
                 newPlayer.move(0, 5);
             }
-            newRoadBlock.move(0, 10);
-            newRoadBlock2.move(0, 9);
-            newRoadBlock3.move(0, 8);
-            newRoadBlock4.move(0, 7);        
+            newRoadBlock.move(0, 9);
+            newRoadBlock2.move(0, 8);
+            newRoadBlock3.move(0, 7);
+            newRoadBlock4.move(0, 6);        
             
             scoreText.setText(String.format("Score: %.0f", roadBlock.getScore()));
 
